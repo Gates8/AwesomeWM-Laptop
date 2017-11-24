@@ -27,8 +27,8 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 
 --FreeDesktop
-require('Widgets.freedesktop.utils')
-require('Widgets.freedesktop.menu')
+require('widgets.freedesktop.utils')
+require('widgets.freedesktop.menu')
 freedesktop.utils.icon_theme = 'gnome'
 
 -- LAin separators. Just dicking around with them 
@@ -42,14 +42,14 @@ local separator = lain.util.separators
 vicious 			= require("vicious"				)
 local wi 			= require("wi"					)
 local blingbling 	= require("blingbling"			)
-local fs_wi 		= require("Widgets.fs_wi"		)
-local pac_wi 		= require("Widgets.pac_wi"		)
-local net_wi 		= require("Widgets.net_wi"		)
-local uptime_wi		= require("Widgets.uptime_wi"	)
-local vol_wi		= require("Widgets.vol_wi"		)
-local clock			= require("Widgets.clock_wi"	)
-local bat			= require("Widgets.battery_wi"	)
---local weather		= require("Widgets.weather_wi"	)
+local fs_wi 		= require("widgets.fs_wi"		)
+local pac_wi 		= require("widgets.pac_wi"		)
+local net_wi 		= require("widgets.net_wi"		)
+local uptime_wi		= require("widgets.uptime_wi"	)
+local vol_wi		= require("widgets.vol_wi"		)
+local clock			= require("widgets.clock_wi"	)
+local bat			= require("widgets.battery_wi"	)
+--local weather		= require("widgets.weather_wi"	)
 
 require("spotify")
 -------------------------------------
