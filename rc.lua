@@ -31,7 +31,7 @@ require('widgets.freedesktop.utils')
 require('widgets.freedesktop.menu')
 freedesktop.utils.icon_theme = 'gnome'
 
--- LAin separators. Just dicking around with them 
+-- Lain separators. Just dicking around with them 
 local separator = lain.util.separators
 -------------------------------------
 
@@ -55,10 +55,10 @@ require("spotify")
 -------------------------------------
 -- Launchers
 home 			= os.getenv("HOME")
-confdir 		= home .. "/.config/awesome"
-themes 			= confdir .. "/themes"
-active_theme 	= themes .. "/default"
-launcher_dir 	= active_theme .. "/icons/launchers/"
+confdir 		= home 			.. 		"/.config/awesome"
+themes 			= confdir 		.. 		"/themes"
+active_theme 	= themes 		.. 		"/default"
+launcher_dir 	= active_theme 	.. 		"/icons/launchers/"
 
 msjche_launcher	= awful.widget.launcher({ image =  launcher_dir .. "tux.png", command = home .. "/Scripts/Theming/msjche.sh" })
 

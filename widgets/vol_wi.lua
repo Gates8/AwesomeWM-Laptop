@@ -9,7 +9,7 @@ vicious.cache(vicious.widgets.volume)
 volicion = wibox.widget.imagebox(beautiful.widget_vol)
 
 volpct = wibox.widget.textbox()
-vicious.register(volpct, vicious.widgets.volume, "$1", nil, "Master")
+vicious.register(volpct, vicious.widgets.volume, "$1%", nil, "Master")
 
 volicon:buttons(awful.util.table.join(awful.button({ }, 3, function() awful.spawn("pavucontrol") end)))
 volpct:buttons(volicon:buttons())
@@ -48,6 +48,6 @@ vdo_img:buttons(awful.util.table.join(
 	)
 
 -- Do I really want this tooltip?
-vol_t = awful.tooltip({text = "Volume Control",
-						objects = {volicon, vup_img} })
+--vol_t = awful.tooltip({text = "Volume Control",
+--	objects = {volicon, vup_img} })
 
